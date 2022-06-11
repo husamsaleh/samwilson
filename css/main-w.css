@@ -1,0 +1,219 @@
+/* header design and floating boxx animation on most of the pages */
+/* header start */
+.header {
+  background: rgb(0, 0, 0);
+  height: 10vh;
+  position: relative;
+  z-index: 1111;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header h1 {
+  color: rgb(255, 255, 255);
+  transition: 1s ease;
+  text-shadow: var(--main) 2px 2px 2px;
+  font-size: 7vh;
+  margin-left: 2vw;
+  font-weight: 400;
+}
+
+.header h1:hover {
+  cursor: pointer;
+  color: var(--main);
+  transition: 1s;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  background: black;
+}
+
+.header ul li {
+  padding: 3px 0;
+  justify-content: center;
+
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: var(--main);
+  font-weight: 600;
+  margin: 30px;
+  transition: 0.5s ease;
+  padding: 4px;
+}
+
+.header ul li a:hover {
+  color: var(--white);
+}
+@media screen and (min-width: 1000px) {
+  .header ul {
+    margin-right: 62px;
+  }
+}
+@media screen and (max-width: 793px) {
+  .header ul {
+    flex-wrap: wrap;
+    position: absolute;
+    border-top: 3px rgb(42, 42, 42) solid;
+    background: var(--black);
+    width: 100%;
+    top: 10vh;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header h1 {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 712px) {
+  .header ul {
+    margin-right: 20px;
+  }
+  .header ul li a {
+    font-size: 1rem;
+  }
+}
+/* header end */
+
+/*////////////////////// box animations start ///////////////////////////////////////////////////////////////////////////////////*/
+.animation-area {
+  background: transparent;
+  width: 100%;
+}
+
+.box-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: red;
+  animation: animate 30s linear infinite;
+  bottom: -100px;
+  border-radius: 0;
+  transition: 0.2s;
+}
+.box-area li {
+  background: rgb(255, 255, 255);
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 10px;
+  height: 10px;
+  animation-delay: 1s;
+  border-radius: 50%;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 7px;
+  height: 7px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 3.5s;
+}
+
+.box-area li:nth-child(7) {
+  left: 65%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(8) {
+  left: 100%;
+  width: 3px;
+  height: 3px;
+  animation-delay: 3.5s;
+}
+
+.box-area li:nth-child(9) {
+  left: 70%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(10) {
+  left: 40%;
+  width: 7px;
+  height: 7px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* scrollbar color and design  */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}

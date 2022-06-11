@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: rgb(54, 54, 54);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* header design start */
+.header {
+  background: white;
+}
+.header h1 {
+  color: black;
+  text-shadow: none;
+}
+.header ul {
+  background: white;
+}
+.header ul li a {
+  color: black;
+}
+.header ul li a:hover {
+  color: var(--main);
+}
+/* header design end */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  padding-top: 20vh;
+}
+
+/* info about me is the text */
+.infoAboutMe {
+  color: #fdfdfd;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  text-align: end;
+  padding-right: 50px;
+}
+
+.infoAboutMe h2 {
+  color: orange;
+  margin-bottom: 30px;
+}
+/* email section is the email box entry */
+.email-html section {
+  display: grid;
+  overflow: auto;
+  min-width: auto;
+  width: 50%;
+}
+.email-container {
+  max-width: 1000px;
+  z-index: 1111;
+  outline: none;
+}
+.form-group {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  padding: 10px;
+  background: #fdfdfd;
+}
+/* em = email placeholder */
+.em {
+  width: 100%;
+}
+/* ms = massage entry box */
+.ms {
+  width: 100%;
+}
+
+.form-group:hover {
+  background: rgb(228, 228, 228);
+}
+.form-group input,
+.form-group textarea {
+  width: 75%;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  margin-top: 5px;
+  background: transparent;
+  color: var(--black);
+  outline: none;
+  margin-left: 20px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--black);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--black);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--black);
+}
+
+/* .form-group .form-group input:last-child,
+.form-group textarea:last-child {
+  border: 5px gray solid;
+} */
+.form-group input:focus {
+  border-bottom: 1px var(--black) solid;
+}
+
+textarea {
+  resize: none;
+}
+/* submit button */
+button[type="submit"] {
+  padding: 16px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  background: orange;
+
+  color: rgb(0, 0, 0);
+}
+button[type="submit"]:hover {
+  font-weight: 800;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(201, 68, 27);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .infoAboutMe h2 {
+    font-size: 46px;
+  }
+  .infoAboutMe p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 794px) {
+  .infoAboutMe {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .email-html section {
+    width: 90%;
+  }
+}

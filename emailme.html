@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="email-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <!-- css linking start -->
+    <link rel="stylesheet" href="/css/main-w.css" />
+    <link rel="stylesheet" href="/css/globe-w.css" />
+    <link rel="stylesheet" href="/css/email-w.css" />
+    <!-- css linking end -->
+
+    <!-- google fonts start -->
+    <script
+      src="https://kit.fontawesome.com/f7e2387afa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google fonts end -->
+  </head>
+  <body>
+    <div class="header">
+      <a href="./index.html"><h1>SAM WILSON</h1></a>
+
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./emailme.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- animation starts -->
+    <div class="animation-area">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- animation ends -->
+    <!-- body starts -->
+    <!-- container  -->
+    <div class="container">
+      <!-- info about me is text only  -->
+      <div class="infoAboutMe">
+        <h2>Contact Me</h2>
+        <p>
+          feel free to get in touch with me. i am always open to discussing new
+          projects, creative ideas or opportunities to be part of your vision.
+        </p>
+      </div>
+      <!-- section is the start of email box entry -->
+      <section>
+        <form
+          action="https://formspree.io/f/mwkayvdv"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group fg">
+            <label for="firstName"> </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your Name"
+            />
+          </div>
+
+          <div class="form-group em" style="display: flex">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+
+          <div class="form-group ms">
+            <label for="massage"></label>
+            <textarea
+              name="massage"
+              id="massage"
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Message"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="status"></div>
+      </section>
+    </div>
+  </body>
+</html>
