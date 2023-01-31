@@ -16,6 +16,7 @@ body {
   position: relative;
   margin: auto;
 }
+
 /* intro post  start*/
 .main-post {
   display: flex;
@@ -24,15 +25,18 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .my-intro {
   margin-bottom: 4vh;
 }
+
 .my-intro h2 {
   font-size: 98px;
   text-shadow: 3px 3px 5px rgb(92, 92, 92);
   cursor: default;
   transition: 0.2s ease-in-out;
 }
+
 .my-intro h2:hover {
   text-shadow: 4px 4px 10px var(--main);
 }
@@ -41,6 +45,7 @@ body {
   width: 30%;
   height: 60vh;
 }
+
 .image-intro img {
   width: 100%;
   height: 100%;
@@ -50,6 +55,7 @@ body {
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
+
 .image-intro img:hover {
   box-shadow: 34px 22px 41px var(--main);
 }
@@ -59,6 +65,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .an:first-of-type {
   animation: showup 7s;
 }
@@ -70,11 +77,13 @@ body {
 .an:last-of-type span {
   animation: slidein 7s;
 }
+
 /* intro post  end*/
 /*  body  start*/
 .posts {
   width: 100%;
 }
+
 .p1 {
   display: flex;
   flex-direction: row;
@@ -82,6 +91,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .p1:last-child {
   padding-bottom: 100px;
 }
@@ -89,10 +99,12 @@ body {
 .text {
   width: 70%;
 }
+
 .text h2 {
   font-size: 48px;
   text-shadow: 2px 2px 2px rgb(93, 93, 93);
 }
+
 .text p {
   font-weight: 500;
   padding: 20px;
@@ -101,6 +113,7 @@ body {
 .p1 {
   width: 100%;
 }
+
 .p1 img {
   width: 50%;
   height: 50%;
@@ -108,30 +121,38 @@ body {
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
+
 .p1 img:hover {
   box-shadow: 3px 3px 4px var(--main);
 }
+
 .rev {
   flex-direction: row-reverse;
 }
+
 .p1 .text p a {
   color: var(--main);
   text-decoration: underline;
 }
+
 .p1 .text p a:hover {
   color: red;
 }
+
 /* opening antimation for name - SAM  */
 @keyframes showup {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 1;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
   }
@@ -141,12 +162,15 @@ body {
   0% {
     margin-left: -800px;
   }
+
   20% {
     margin-left: -800px;
   }
+
   35% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: 0px;
   }
@@ -157,33 +181,41 @@ body {
     opacity: 0;
     width: 0px;
   }
+
   20% {
     opacity: 1;
     width: 0px;
   }
+
   30% {
     width: 320px;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     width: 320px;
   }
 }
+
 @media (max-width: 1200px) {
   .main-post {
     flex-direction: column;
   }
+
   .image-intro {
     width: 600px;
     height: 600px;
   }
+
   .image-intro img {
     width: 67%;
     height: 74%;
   }
+
   .p1 {
     flex-direction: column;
     margin-top: 150px;
@@ -203,12 +235,15 @@ body {
     0% {
       opacity: 0;
     }
+
     20% {
       opacity: 1;
     }
+
     80% {
       opacity: 1;
     }
+
     100% {
       opacity: 1;
     }
@@ -218,12 +253,15 @@ body {
     0% {
       margin-left: -200px;
     }
+
     20% {
       margin-left: -200px;
     }
+
     35% {
       margin-left: 0px;
     }
+
     100% {
       margin-left: 0px;
     }
@@ -234,22 +272,27 @@ body {
       opacity: 0;
       width: 0px;
     }
+
     20% {
       opacity: 1;
       width: 0px;
     }
+
     30% {
       width: fit-content;
     }
+
     80% {
       opacity: 1;
     }
+
     100% {
       opacity: 1;
       width: fit-content;
     }
   }
 }
+
 .main-menu {
   background-color: rgb(0, 0, 0);
   border-top-right-radius: 10px;
@@ -270,6 +313,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
+
 .p-menu1 {
   top: 10vh;
   position: fixed;
@@ -302,6 +346,7 @@ body {
   overflow-y: scroll;
   box-shadow: 0px 0px 10px var(--main);
 }
+
 .home {
   border-bottom: 3px solid rgb(255, 255, 255);
 }
@@ -323,12 +368,14 @@ body {
   padding-left: 52px;
 }
 
-.main-menu .menu-item:hover > .fa {
+.main-menu .menu-item:hover>.fa {
   color: var(--main);
 }
+
 .main-menu::-webkit-scrollbar {
   width: 20px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent !important;
 }
@@ -347,6 +394,7 @@ body {
   display: none;
   position: fixed;
 }
+
 .hamburger1 div {
   background-color: gray;
   z-index: 1111;
@@ -362,24 +410,24 @@ body {
   display: none;
 }
 
-#toggle1:checked + .hamburger1 .top {
+#toggle1:checked+.hamburger1 .top {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: 22.5px;
 }
 
-#toggle1:checked + .hamburger1 .meat {
+#toggle1:checked+.hamburger1 .meat {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: -5px;
 }
 
-#toggle1:checked + .hamburger1 .bottom {
+#toggle1:checked+.hamburger1 .bottom {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
-#toggle1:checked ~ .menu1 {
+#toggle1:checked~.menu1 {
   height: 100%;
 }
 
@@ -421,6 +469,7 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 /* footer start */
 .contact-info p a {
   color: black;
@@ -446,6 +495,7 @@ body {
   align-items: center;
   position: absolute;
 }
+
 .footer,
 .generic-footer {
   margin-bottom: 0px !important;
@@ -462,6 +512,7 @@ body {
 .footer i:hover {
   color: rgb(2, 2, 2);
 }
+
 /* footer end */
 @media (min-width: 1400px) {
   .menu1 {
@@ -473,6 +524,7 @@ body {
   .main-menu {
     display: none;
   }
+
   .hamburger1 {
     display: block;
     cursor: pointer;
@@ -491,21 +543,27 @@ body {
   .my-intro h2 {
     font-size: 48px;
   }
+
   .my-intro {
     margin-bottom: 0vh;
   }
+
   .image-intro {
     height: 65vh;
   }
+
   .my-intro span {
     font-size: 10px;
   }
+
   .image-intro img {
     height: 40vh;
   }
+
   .p1 {
     margin-top: 0;
   }
+
   .p1 {
     margin-bottom: 100px;
   }
@@ -526,19 +584,43 @@ body {
     margin: auto;
   }
 }
+
+@media screen and (max-width:600px) {
+
+  .posts .text {
+    width: 100%;
+  }
+
+  .text h2 {
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgb(93, 93, 93);
+  }
+
+  .text p {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 372px) {
   @keyframes slidein {
     0% {
       margin-top: -800px;
     }
+
     20% {
       margin-top: -800px;
     }
+
     35% {
       margin-top: 0px;
     }
+
     100% {
       margin-top: 0px;
     }
   }
+
+
 }
